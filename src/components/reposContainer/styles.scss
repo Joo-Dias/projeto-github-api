@@ -1,0 +1,58 @@
+@import "../../../public/variables";
+
+.Section {
+    width: 400px;
+    height: 400px;
+    background: $first-color;
+    border-radius: 10px;
+    border-bottom: 10px solid $font-color;
+    margin-top: 15px;
+    
+    @media (max-width: 430px) {
+        width: 300px;
+    }
+}
+
+.Title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+    color: $font-color-white;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+}
+
+.ListOfReposContainer {
+    height: 350px;
+    width: 100%;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.Repo {
+    width: 100%;
+    height: 80px;
+    background: $background;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    h2 {
+        font-size: 15px;
+        width: 100%;
+        overflow: hidden;
+        color: $font-color;
+    }
+
+    p {
+        font-size: 12px;
+        font-weight: 400;
+        color: #777;
+        width: 100%;
+        height: 30px;
+        overflow: hidden;
+        line-height: 1.3;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,94 @@
+@import "../../../public/variables";
+
+.HeardSection {
+    width: 400px;
+    height: 130px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    @media (max-width: 430px) {
+        width: 300px;
+    } 
+}
+
+.box {
+    background: $first-color;
+
+    .github-icon {
+        color: $font-color;
+        font-size: 5rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .input {
+        background: $background;
+        border: 1px solid $first-color;
+        color: $font-color;
+    
+         &:focus {
+             border: 1px solid $font-color-1;
+         }
+    }
+
+    .HeaderTitle {
+        margin: 0;
+        padding: 15px 0;
+        color: $font-color;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        width: 100%;
+    }
+    .HeaderInputContainer {
+        padding: 10px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        a {
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            border: none;
+            background: #FF7A00;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFF;
+            transition: ease .3s;
+    
+            &:hover {
+                transform: scale(1.05);
+                transition: ease .3s;
+                cursor: pointer;
+            }
+        }
+    }
+    .HeaderInput {
+        width: 200px;
+        height: 30px;
+        border-radius: 15px;
+        border: none;
+        padding: 0 16px;
+        color: #444;
+        transition: .4s ease;
+    
+        &:focus {
+            outline: none;
+            width: 220px;
+            transition: .4s ease;
+        }
+    }
+    
+}
+
+
+
+
+

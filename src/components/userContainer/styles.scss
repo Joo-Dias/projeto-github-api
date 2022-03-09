@@ -1,0 +1,13 @@
+@import "../../../public/variables";
+
+.Section-userContainer {
+    width: 400px;
+    background: $first-color;
+    border-radius: 5px;
+    border-bottom: 10px solid $font-color;
+    margin-top: 15px;
+
+    @media (max-width: 430px) {
+        width: 300px;
+    }
+}
